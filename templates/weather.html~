@@ -15,7 +15,8 @@
 
   <body>
 	<button class="btn btn-default" type="submit">Button</button>
-	<img src="humid2016-05-02.jpg" width="200" height="85">
+	<img src="{{url_for('static', filename='humid2016-05-02.jpg')}}" />
+
   </body>
 
 </body></html>

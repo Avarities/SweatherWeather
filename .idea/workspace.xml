@@ -16,7 +16,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/weather$Unittests_in_weather.coverage" NAME="Unittests in weather Coverage Results" MODIFIED="1459970933162" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/weather$Unittests_in_weather__1_.coverage" NAME="Unittests in weather (1) Coverage Results" MODIFIED="1461177823314" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/weather$main.coverage" NAME="main Coverage Results" MODIFIED="1462184564994" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/weather$main.coverage" NAME="main Coverage Results" MODIFIED="1462185468686" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/weather$Unittests_in_weather__2_.coverage" NAME="Unittests in weather (2) Coverage Results" MODIFIED="1461177839440" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -31,13 +31,13 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="522">
-              <caret line="29" column="46" selection-start-line="29" selection-start-column="46" selection-end-line="29" selection-end-column="46" />
+            <state relative-caret-position="324">
+              <caret line="162" column="19" selection-start-line="162" selection-start-column="19" selection-end-line="162" selection-end-column="19" />
               <folding>
                 <element signature="e#1#16#0" expanded="true" />
-                <marker date="1462184528165" expanded="true" signature="580:632" placeholder="select atmos... forecast" />
-                <marker date="1462184528165" expanded="true" signature="580:633" placeholder="select atmos... forecast" />
-                <marker date="1462184528165" expanded="true" signature="664:720" placeholder="select item forecast" />
+                <marker date="1462185414949" expanded="true" signature="580:632" placeholder="select atmos... forecast" />
+                <marker date="1462185414949" expanded="true" signature="580:633" placeholder="select atmos... forecast" />
+                <marker date="1462185414949" expanded="true" signature="664:720" placeholder="select item forecast" />
               </folding>
             </state>
           </provider>
@@ -473,7 +473,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13908356" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -481,7 +481,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31536114" sideWeight="0.49811321" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31536114" sideWeight="0.49811321" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -519,9 +519,9 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#1#16#0" expanded="true" />
-            <marker date="1462184528165" expanded="true" signature="580:632" placeholder="select atmos... forecast" />
-            <marker date="1462184528165" expanded="true" signature="580:633" placeholder="select atmos... forecast" />
-            <marker date="1462184528165" expanded="true" signature="664:720" placeholder="select item forecast" />
+            <marker date="1462185414949" expanded="true" signature="580:632" placeholder="select atmos... forecast" />
+            <marker date="1462185414949" expanded="true" signature="580:633" placeholder="select atmos... forecast" />
+            <marker date="1462185414949" expanded="true" signature="664:720" placeholder="select item forecast" />
           </folding>
         </state>
       </provider>
@@ -539,9 +539,9 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#1#16#0" expanded="true" />
-            <marker date="1462184528165" expanded="true" signature="580:632" placeholder="select atmos... forecast" />
-            <marker date="1462184528165" expanded="true" signature="580:633" placeholder="select atmos... forecast" />
-            <marker date="1462184528165" expanded="true" signature="664:720" placeholder="select item forecast" />
+            <marker date="1462185414949" expanded="true" signature="580:632" placeholder="select atmos... forecast" />
+            <marker date="1462185414949" expanded="true" signature="580:633" placeholder="select atmos... forecast" />
+            <marker date="1462185414949" expanded="true" signature="664:720" placeholder="select item forecast" />
           </folding>
         </state>
       </provider>
@@ -553,9 +553,9 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#1#16#0" expanded="true" />
-            <marker date="1462184528165" expanded="true" signature="580:632" placeholder="select atmos... forecast" />
-            <marker date="1462184528165" expanded="true" signature="580:633" placeholder="select atmos... forecast" />
-            <marker date="1462184528165" expanded="true" signature="664:720" placeholder="select item forecast" />
+            <marker date="1462185414949" expanded="true" signature="580:632" placeholder="select atmos... forecast" />
+            <marker date="1462185414949" expanded="true" signature="580:633" placeholder="select atmos... forecast" />
+            <marker date="1462185414949" expanded="true" signature="664:720" placeholder="select item forecast" />
           </folding>
         </state>
       </provider>
@@ -567,9 +567,9 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#1#16#0" expanded="true" />
-            <marker date="1462184528165" expanded="true" signature="580:632" placeholder="select atmos... forecast" />
-            <marker date="1462184528165" expanded="true" signature="580:633" placeholder="select atmos... forecast" />
-            <marker date="1462184528165" expanded="true" signature="664:720" placeholder="select item forecast" />
+            <marker date="1462185414949" expanded="true" signature="580:632" placeholder="select atmos... forecast" />
+            <marker date="1462185414949" expanded="true" signature="580:633" placeholder="select atmos... forecast" />
+            <marker date="1462185414949" expanded="true" signature="664:720" placeholder="select item forecast" />
           </folding>
         </state>
       </provider>
@@ -581,9 +581,9 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#1#16#0" expanded="true" />
-            <marker date="1462184528165" expanded="true" signature="580:632" placeholder="select atmos... forecast" />
-            <marker date="1462184528165" expanded="true" signature="580:633" placeholder="select atmos... forecast" />
-            <marker date="1462184528165" expanded="true" signature="664:720" placeholder="select item forecast" />
+            <marker date="1462185414949" expanded="true" signature="580:632" placeholder="select atmos... forecast" />
+            <marker date="1462185414949" expanded="true" signature="580:633" placeholder="select atmos... forecast" />
+            <marker date="1462185414949" expanded="true" signature="664:720" placeholder="select item forecast" />
           </folding>
         </state>
       </provider>
@@ -595,9 +595,9 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#1#16#0" expanded="true" />
-            <marker date="1462184528165" expanded="true" signature="580:632" placeholder="select atmos... forecast" />
-            <marker date="1462184528165" expanded="true" signature="580:633" placeholder="select atmos... forecast" />
-            <marker date="1462184528165" expanded="true" signature="664:720" placeholder="select item forecast" />
+            <marker date="1462185414949" expanded="true" signature="580:632" placeholder="select atmos... forecast" />
+            <marker date="1462185414949" expanded="true" signature="580:633" placeholder="select atmos... forecast" />
+            <marker date="1462185414949" expanded="true" signature="664:720" placeholder="select item forecast" />
           </folding>
         </state>
       </provider>
@@ -608,9 +608,9 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#1#16#0" expanded="true" />
-            <marker date="1462184528165" expanded="true" signature="580:632" placeholder="select atmos... forecast" />
-            <marker date="1462184528165" expanded="true" signature="580:633" placeholder="select atmos... forecast" />
-            <marker date="1462184528165" expanded="true" signature="664:720" placeholder="select item forecast" />
+            <marker date="1462185414949" expanded="true" signature="580:632" placeholder="select atmos... forecast" />
+            <marker date="1462185414949" expanded="true" signature="580:633" placeholder="select atmos... forecast" />
+            <marker date="1462185414949" expanded="true" signature="664:720" placeholder="select item forecast" />
           </folding>
         </state>
       </provider>
@@ -621,9 +621,9 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#1#16#0" expanded="true" />
-            <marker date="1462184528165" expanded="true" signature="580:632" placeholder="select atmos... forecast" />
-            <marker date="1462184528165" expanded="true" signature="580:633" placeholder="select atmos... forecast" />
-            <marker date="1462184528165" expanded="true" signature="664:720" placeholder="select item forecast" />
+            <marker date="1462185414949" expanded="true" signature="580:632" placeholder="select atmos... forecast" />
+            <marker date="1462185414949" expanded="true" signature="580:633" placeholder="select atmos... forecast" />
+            <marker date="1462185414949" expanded="true" signature="664:720" placeholder="select item forecast" />
           </folding>
         </state>
       </provider>
@@ -634,9 +634,9 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#1#16#0" expanded="true" />
-            <marker date="1462184528165" expanded="true" signature="580:632" placeholder="select atmos... forecast" />
-            <marker date="1462184528165" expanded="true" signature="580:633" placeholder="select atmos... forecast" />
-            <marker date="1462184528165" expanded="true" signature="664:720" placeholder="select item forecast" />
+            <marker date="1462185414949" expanded="true" signature="580:632" placeholder="select atmos... forecast" />
+            <marker date="1462185414949" expanded="true" signature="580:633" placeholder="select atmos... forecast" />
+            <marker date="1462185414949" expanded="true" signature="664:720" placeholder="select item forecast" />
           </folding>
         </state>
       </provider>
@@ -647,9 +647,9 @@
           <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
           <folding>
             <element signature="e#1#16#0" expanded="true" />
-            <marker date="1462184528165" expanded="true" signature="580:632" placeholder="select atmos... forecast" />
-            <marker date="1462184528165" expanded="true" signature="580:633" placeholder="select atmos... forecast" />
-            <marker date="1462184528165" expanded="true" signature="664:720" placeholder="select item forecast" />
+            <marker date="1462185414949" expanded="true" signature="580:632" placeholder="select atmos... forecast" />
+            <marker date="1462185414949" expanded="true" signature="580:633" placeholder="select atmos... forecast" />
+            <marker date="1462185414949" expanded="true" signature="664:720" placeholder="select item forecast" />
           </folding>
         </state>
       </provider>
@@ -660,9 +660,9 @@
           <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
           <folding>
             <element signature="e#1#16#0" expanded="true" />
-            <marker date="1462184528165" expanded="true" signature="580:632" placeholder="select atmos... forecast" />
-            <marker date="1462184528165" expanded="true" signature="580:633" placeholder="select atmos... forecast" />
-            <marker date="1462184528165" expanded="true" signature="664:720" placeholder="select item forecast" />
+            <marker date="1462185414949" expanded="true" signature="580:632" placeholder="select atmos... forecast" />
+            <marker date="1462185414949" expanded="true" signature="580:633" placeholder="select atmos... forecast" />
+            <marker date="1462185414949" expanded="true" signature="664:720" placeholder="select item forecast" />
           </folding>
         </state>
       </provider>
@@ -673,9 +673,9 @@
           <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
           <folding>
             <element signature="e#1#16#0" expanded="true" />
-            <marker date="1462184528165" expanded="true" signature="580:632" placeholder="select atmos... forecast" />
-            <marker date="1462184528165" expanded="true" signature="580:633" placeholder="select atmos... forecast" />
-            <marker date="1462184528165" expanded="true" signature="664:720" placeholder="select item forecast" />
+            <marker date="1462185414949" expanded="true" signature="580:632" placeholder="select atmos... forecast" />
+            <marker date="1462185414949" expanded="true" signature="580:633" placeholder="select atmos... forecast" />
+            <marker date="1462185414949" expanded="true" signature="664:720" placeholder="select item forecast" />
           </folding>
         </state>
       </provider>
@@ -686,9 +686,9 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#1#16#0" expanded="true" />
-            <marker date="1462184528165" expanded="true" signature="580:632" placeholder="select atmos... forecast" />
-            <marker date="1462184528165" expanded="true" signature="580:633" placeholder="select atmos... forecast" />
-            <marker date="1462184528165" expanded="true" signature="664:720" placeholder="select item forecast" />
+            <marker date="1462185414949" expanded="true" signature="580:632" placeholder="select atmos... forecast" />
+            <marker date="1462185414949" expanded="true" signature="580:633" placeholder="select atmos... forecast" />
+            <marker date="1462185414949" expanded="true" signature="664:720" placeholder="select item forecast" />
           </folding>
         </state>
       </provider>
@@ -713,13 +713,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="29" column="46" selection-start-line="29" selection-start-column="46" selection-end-line="29" selection-end-column="46" />
+        <state relative-caret-position="324">
+          <caret line="162" column="19" selection-start-line="162" selection-start-column="19" selection-end-line="162" selection-end-column="19" />
           <folding>
             <element signature="e#1#16#0" expanded="true" />
-            <marker date="1462184528165" expanded="true" signature="580:632" placeholder="select atmos... forecast" />
-            <marker date="1462184528165" expanded="true" signature="580:633" placeholder="select atmos... forecast" />
-            <marker date="1462184528165" expanded="true" signature="664:720" placeholder="select item forecast" />
+            <marker date="1462185414949" expanded="true" signature="580:632" placeholder="select atmos... forecast" />
+            <marker date="1462185414949" expanded="true" signature="580:633" placeholder="select atmos... forecast" />
+            <marker date="1462185414949" expanded="true" signature="664:720" placeholder="select item forecast" />
           </folding>
         </state>
       </provider>

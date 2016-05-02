@@ -133,7 +133,7 @@ class ReadData:
 
         plt.xticks(np.arange(0, 25, 1))
         plt.yticks(np.arange(0, 60, 5))
-        plt.savefig('temperature' + str(day) + '.jpg')
+        plt.savefig('static/temperature' + '.jpg')
         plt.close()
 
     def createPressureChart(self, day):
@@ -146,7 +146,7 @@ class ReadData:
         )
         plt.xticks(np.arange(0, 24, 1))
         plt.yticks(np.arange(900, 1030, 5))
-        plt.savefig('pressure' + str(day) + '.jpg')
+        plt.savefig('static/pressure' + '.jpg')
         plt.close()
 
     def createHumidChart(self, day):
@@ -159,7 +159,7 @@ class ReadData:
         )
         plt.xticks(np.arange(0, 24, 1))
         plt.yticks(np.arange(0, 101, 5))
-        plt.savefig('humid' + str(day) + '.jpg')
+        plt.savefig('static/humid' + '.jpg')
         plt.close()
 
 poz = SaveData()
