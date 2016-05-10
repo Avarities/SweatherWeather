@@ -9,11 +9,20 @@ import urllib2
 import urllib
 import json
 from flask import Flask, render_template
+from flask import request
+
 app = Flask(__name__)
 matplotlib.rcParams.update({'font.size': 5})
 
-@app.route("/", methods=['GET', 'POST'])
+@app.route("/")
 def main():
+    return render_template('weather.html')
+
+@app.route('/', methods=['POST'])
+def my_form_post():
+    text = request.form['text']
+    czyt = ReadData()
+    czyt.readData('514048',text)
     return render_template('weather.html')
 
 class SaveData:
@@ -75,7 +84,8 @@ class ReadData:
                 encodeArray = self.encodeData(line)
                 self.addDataToTables(encodeArray, line, 'base')
 
-
+        print('Yahoo' + cityCode +' ' + str(day))
+        print self.yahooTempList
         self.createCharts(day)
 
 
@@ -133,7 +143,7 @@ class ReadData:
 
         plt.xticks(np.arange(0, 25, 1))
         plt.yticks(np.arange(0, 60, 5))
-        plt.savefig('static/temperature' + '.jpg')
+        plt.savefig('static/temperature' + '.png')
         plt.close()
 
     def createPressureChart(self, day):
@@ -146,7 +156,7 @@ class ReadData:
         )
         plt.xticks(np.arange(0, 24, 1))
         plt.yticks(np.arange(900, 1030, 5))
-        plt.savefig('static/pressure' + '.jpg')
+        plt.savefig('static/pressure' +'.png')
         plt.close()
 
     def createHumidChart(self, day):
@@ -159,14 +169,15 @@ class ReadData:
         )
         plt.xticks(np.arange(0, 24, 1))
         plt.yticks(np.arange(0, 101, 5))
-        plt.savefig('static/humid' + '.jpg')
+        plt.savefig('static/humid' +'.pgn')
         plt.close()
 
-poz = SaveData()
-poz.getWeatherInfo('514048')
-poz.saveToFile('514048')
-czyt = ReadData()
-czyt.readData('514048',datetime.datetime.now().date())
+#poz = SaveData()
+#poz.getWeatherInfo('514048')
+#poz.saveToFile('514048')
+#czyt = ReadData()
+#czyt.readData('514048',datetime.datetime.now().date())
 
 if __name__ == "__main__":
+
     app.run();

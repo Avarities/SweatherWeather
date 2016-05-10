@@ -2,6 +2,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
     <link rel="icon" href="../../favicon.ico">
 
     <title>Weather</title>
@@ -15,9 +17,16 @@
 
   <body>
 	<button class="btn btn-default" type="submit">Button</button>
-	<img src="{{url_for('static', filename='humid.jpg')}}" />
-	<img src="{{url_for('static', filename='pressure.jpg')}}" />
-	<img src="{{url_for('static', filename='temperature.jpg')}}" />
+	<img src="{{url_for('static', filename='humid.png')}}" />
+	<img src="{{url_for('static', filename='pressure.png')}}" />
+	<img src="static/temperature.png" />
+
+	<h1>Enter some text</h1>
+	<h2>Write date </h2>
+	<form action="." method="POST">
+		<input type="text" name="text">
+		<input type="submit" name="my-form" value="Send">
+	</form>
 
   </body>
 
