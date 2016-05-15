@@ -8,19 +8,25 @@
 
     <title>Weather</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="bootstrap.min.css" rel="stylesheet">
-    <!-- Custom styles for this template -->
-    <link href="dashboard.css" rel="stylesheet">
-
+    <script type="text/javascript" 
+    src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	
+	<script type="text/javascript">
+		function refreshDiv(){
+			$("#img-container").load(location.href + " #img-container");
+			location.reload(true);
+		}
+	</script>
+	
   </head>
 
   <body>
-	<button class="btn btn-default" type="submit">Button</button>
-	<img src="{{url_for('static', filename='humid.png')}}" />
-	<img src="{{url_for('static', filename='pressure.png')}}" />
-	<img src="static/temperature.png" />
-
+	<button class="btn btn-default" type="submit" onclick="refreshDiv()">Button</button>
+	<div id="img-container">
+		<img src="{{url_for('get_image', filename='humid.png')}}" />
+		<img src="{{url_for('get_image', filename='pressure.png')}}" />
+		<img src="{{url_for('get_image', filename='temperature.png')}}" />
+	</div>
 	<h1>Enter some text</h1>
 	<h2>Write date </h2>
 	<form action="." method="POST">

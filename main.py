@@ -1,4 +1,3 @@
-
 import datetime
 from ctypes import c_int
 from unidecode import unidecode
@@ -8,8 +7,11 @@ import numpy as np
 import urllib2
 import urllib
 import json
-from flask import Flask, render_template
-from flask import request
+from flask import Flask, render_template, request, url_for, redirect, send_from_directory
+import os.path
+
+CHARTS_FOLDER = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'charts')
+print(CHARTS_FOLDER)
 
 app = Flask(__name__)
 matplotlib.rcParams.update({'font.size': 5})
@@ -23,7 +25,11 @@ def my_form_post():
     text = request.form['text']
     czyt = ReadData()
     czyt.readData('514048',text)
-    return render_template('weather.html')
+    return redirect('/')
+
+@app.route('/charts/<filename>')
+def get_image(filename):
+	return send_from_directory(CHARTS_FOLDER, filename, as_attachment=True)
 
 class SaveData:
     def __init__(self):
@@ -143,7 +149,7 @@ class ReadData:
 
         plt.xticks(np.arange(0, 25, 1))
         plt.yticks(np.arange(0, 60, 5))
-        plt.savefig('static/temperature' + '.png')
+        plt.savefig('charts/temperature' + '.png')
         plt.close()
 
     def createPressureChart(self, day):
@@ -156,7 +162,7 @@ class ReadData:
         )
         plt.xticks(np.arange(0, 24, 1))
         plt.yticks(np.arange(900, 1030, 5))
-        plt.savefig('static/pressure' +'.png')
+        plt.savefig('charts/pressure' +'.png')
         plt.close()
 
     def createHumidChart(self, day):
@@ -169,7 +175,7 @@ class ReadData:
         )
         plt.xticks(np.arange(0, 24, 1))
         plt.yticks(np.arange(0, 101, 5))
-        plt.savefig('static/humid' +'.pgn')
+        plt.savefig('charts/humid' +'.png')
         plt.close()
 
 #poz = SaveData()
