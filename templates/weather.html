@@ -21,19 +21,22 @@
   </head>
 
   <body>
-	<button class="btn btn-default" type="submit" onclick="refreshDiv()">Button</button>
 	<div id="img-container">
 		<img src="{{url_for('get_image', filename='humid.png')}}" />
 		<img src="{{url_for('get_image', filename='pressure.png')}}" />
 		<img src="{{url_for('get_image', filename='temperature.png')}}" />
 	</div>
-	<h1>Enter some text</h1>
-	<h2>Write date </h2>
+	
+	<h4>Legend:</h4>
+	<h4>Cyan color - readings from local sensors</h4>
+	<h4>Red color - readings from Yahoo</h4>
+	
+	<h2>Write date in a box below</h2>
 	<form action="." method="POST">
 		<input type="text" name="text">
 		<input type="submit" name="my-form" value="Send">
 	</form>
-
+	<button class="btn btn-default" type="submit" onclick="refreshDiv()">Get charts</button>
   </body>
 
 </body></html>

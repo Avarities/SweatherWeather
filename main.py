@@ -9,9 +9,18 @@ import urllib
 import json
 from flask import Flask, render_template, request, url_for, redirect, send_from_directory
 import os.path
+from DHT11 import DHT11
+from LPS331AP import LPS331AP
+import threading
+import RPi.GPIO as GPIO
 
 CHARTS_FOLDER = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'charts')
-print(CHARTS_FOLDER)
+def gpioSetup():
+	GPIO.setwarnings(False)
+	GPIO.setmode(GPIO.BCM)
+	GPIO.cleanup()
+	
+gpioSetup()
 
 app = Flask(__name__)
 matplotlib.rcParams.update({'font.size': 5})
@@ -61,9 +70,14 @@ class SaveData:
         file.write(str(self.dataList[2]) + "|")
         file.write(str(self.dataList[3]) + "\n")
         file.close()
-
-
-
+    
+    def saveToBaseFile(self,cityCode,values):
+		file = open('Base'+cityCode + ' ' + str(self.dataList[0].date()), 'a+')
+		file.write(str(self.dataList[0].hour) + ':' + str(self.dataList[0].minute) + "|")
+		file.write(str(values[0]) + "|")
+		file.write(str(values[1]) + "|")
+		file.write(str(values[2]) + "\n")
+		file.close()
 
 class ReadData:
 
@@ -178,11 +192,27 @@ class ReadData:
         plt.savefig('charts/humid' +'.png')
         plt.close()
 
-#poz = SaveData()
-#poz.getWeatherInfo('514048')
-#poz.saveToFile('514048')
-#czyt = ReadData()
-#czyt.readData('514048',datetime.datetime.now().date())
+
+def getValues():
+	yahooReader = SaveData()
+	yahooReader.getWeatherInfo('514048')
+	yahooReader.saveToFile('514048')
+	sensorReadings = []
+	sensor = DHT11(14) #odczyt DHT11 na pinie 14
+	sensor_2 = LPS331AP()
+	ERR_CODE, temperature, humidity = sensor.getValues()
+	pressure = sensor_2.getPressure()
+	while ERR_CODE != 0:
+		ERR_CODE, temperature, humidity = sensor.getValues()
+	sensorReadings.append(temperature)
+	sensorReadings.append(humidity)
+	sensorReadings.append(pressure)
+	yahooReader.saveToBaseFile('514048',sensorReadings)
+	print('Reading weather...')
+	threading.Timer(60, getValues).start()
+	
+getValues()
+
 
 if __name__ == "__main__":
 
